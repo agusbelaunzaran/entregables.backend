@@ -41,3 +41,12 @@ class ProductManager {
         }
     }
 }
+
+const manager = new ProductManager();
+manager.addProduct("teléfono", 100, 153, 12);
+manager.addProduct("tablet", 200, 456, 8);
+manager.addProduct("computadora", 500, 789, 5);
+
+console.log(manager.getProducts());
+console.log(manager.getProductById(2)); 
+console.log(manager.getProductById(4)); 
